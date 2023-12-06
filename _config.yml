@@ -26,8 +26,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mikkojj
 
+author:
+  name: Mikko Jakonen
+
+
+lang: fi
+
 # Build settings
-theme: minima
+theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
 
@@ -35,6 +41,12 @@ show_excerpts: true
 
 tag_page_layout: tag_page
 tag_page_dir: tag
+
+defaults:
+  - scope:
+      path: "assets/ref_images"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

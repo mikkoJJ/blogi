@@ -1,0 +1,20 @@
+---
+layout: post
+---
+{{ content }}
+
+<h3>Arvosana</h3>
+<table>
+    <tr>
+        <td>Eeeppisyys</td>
+        <td>{% for i in (0..page.eeppisyys) %} ★ {% endfor %}</td>
+    </tr>
+    <tr>
+        <td>Sankarillisuus</td>
+        <td>{% for i in (0..page.sankarillisuus) %} ★ {% endfor %}</td>
+    </tr>
+    <tr>
+        <td>Fantastisuus</td>
+        <td>{% for i in (0..page.fantastisuus) %} ★ {% endfor %}</td>
+    </tr>
+</table>
